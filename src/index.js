@@ -6,7 +6,8 @@ class A extends React.Component {
   state = {
     name: 'Anand',
     surname: "Verma",
-    Address: "Ayodhya"
+    Address: "Ayodhya",
+
   }
   //2. Constructor
   onHedingClick = () => {
@@ -18,6 +19,7 @@ class A extends React.Component {
     return <>
       <h1>Oklabs {this.props.name} {this.props.surname} {this.props.children} {this.state.name} {this.state.surname}</h1>
       <h1 onClick={this.onHedingClick}>{this.state.Address}</h1>
+
 
     </>
 
